@@ -20,7 +20,23 @@ module.exports = {
       xl: '1310px'
     },
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        singerOverlay: 'urt(/public/assets/gradient_clearbluis.png)',
+        newsletter: 'urt(/public/assets/gradient_clearbluis.png)'
+      },
+      fontFamily: {
+        alexBrush: [`--font-alexBrush`, 'sans-serif'],
+        monteserrat: [`--font-monteserrat`, 'sans-serif'],
+      },
+      colors: {
+        primary: '#06062a',
+        Secondary: '#151538',
+        tertiary: '@242445',
+        accent: {
+          DEFAULT: '#7f1cfc',
+          hover: '#6519c6',
+        }
+      }
     },
   },
   plugins: [],
