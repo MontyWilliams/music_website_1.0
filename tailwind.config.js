@@ -13,6 +13,12 @@ module.exports = {
         DEFAULT: '15px',
       },
     },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '960',
+      xl: '1310px'
+    },
     extend: {
       backgroundImage: {},
     },
