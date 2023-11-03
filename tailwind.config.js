@@ -21,8 +21,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        singerOverlay: 'urt(/public/assets/gradient_clearbluis.png)',
-        newsletter: 'urt(/public/assets/gradient_clearbluis.png)'
+        singerOverlay: 'url(/public/assets/gradient_clearbluis.png)',
+        newsletter: 'url(/public/assets/gradient_clearbluis.png)'
       },
       fontFamily: {
         alexBrush: [`--font-alexBrush`, 'sans-serif'],
