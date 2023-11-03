@@ -21,7 +21,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${alexBrush.variable} ${montserrat.variable}`}>
+      {/* This makes it easier to turn fonts into classNames */}
+      <body className={`${alexBrush.variable} ${montserrat.variable}`}>S
       {children}
       </body>
     </html>
