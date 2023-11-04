@@ -21,7 +21,7 @@ function EventBox({events}) {
               <div className="flex-1 bg-purple-400/10 h-[500px] flex flex-col justify-between overflow-y-scroll scrollbar-thin scrollbar-thumb-accent scrollbar-track-white/10 xl:pr-6">
                 {events.map((event) => {
                   return (
-                    <div key={event.id}>
+                    <div key={event.id} className="flex flex-col xl:flex-row items-center justify-between gap-y-4 bg-pink-400/10 xl:text-left my-4 xl:my-0">
                       <div>
                         {/* day and month */}
                         <div className="flex flex-col justify-center items-center leading-tight w-[80px] mb-4 xl:mb-0">
