@@ -9,7 +9,11 @@ const Events = async () => {
   console.log(events);
   return (
     <div>
-      Events
+      <section className="section" id="tours">
+        <div className="container mx-auto">
+
+        </div>
+      </section>
     </div>
   )
 }
