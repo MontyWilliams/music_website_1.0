@@ -23,22 +23,27 @@ function EventBox({events}) {
                 {events.map((event) => {
                   return (
                     <div key={event.id} className="flex flex-col xl:flex-row items-center justify-between gap-y-4 xl:gap-y-0 xl:text-left my-4 xl:my-0 border-b border-white/10 pb-10 xl:py-3 last-of-type:border-none first-of-type:pt-0">
-                      <div className="flex flex-col xl:flex-row">
+                      <div className="flex flex-col xl:flex-row items-center gap-x-4">
                         {/* day and month */}
                         <div className="flex flex-col justify-center items-center leading-tight w-[80px] mb-4 xl:mb-0 ">
                           <div className="text-[44px] font-black text-accent">{event.date.day}</div>
                           <div className="text-[20px] font-extrabold">{event.date.month}</div>
                         </div>
                         {/* location  */}
-                        <div className='bg-red-500/20 w-64 flex flex-col gap-y'>
+                        <div className='w-64 flex flex-col items-center gap-y'>
                           <div className='text-lg leading-none font-bold'>{`${event.location.city}, ${event.location.country} `}</div>
-                          <div className='flex items-center gap-x-1'>
-                            <div>
+                          <div className='flex items-center gap-x-1 justify-center xl:justify-start'>
+                            <div className='text-accent text-lg'>
                               <RiMapPin2Fill />
                             </div>
-                            <div>{event.location.address}</div>
+                            <div className='font-light'>{event.location.address}</div>
                           </div>
                         </div>
+                        {/* price range */}
+                        <div className="width-[100px] text-[17px] text-center text-accent font-bold ">{event.priceRange}
+                        </div>
+                        {/* btn */}
+                        <button>Get Tickets</button>
                       </div>
                     </div>
                   )
