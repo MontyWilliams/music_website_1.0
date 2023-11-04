@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* This makes it easier to turn fonts into classNames */}
       <body className={`${alexBrush.variable} ${montserrat.variable} overflow-x-hidden relative`}>
-      <header />
+      <Header />
       {children}
       <Footer />
       </body>
