@@ -12,7 +12,13 @@ function EventBox({events}) {
             </div>
               {/* event list */}
               <div className="flex-1 bg-purple-400/10 h-[500px] flex flex-col">
-                {/* events mapping */}
+                {events.map((event) => {
+                  return (
+                    <div key={event.id}>
+                      Event
+                    </div>
+                  )
+                })}
               </div>
           </div>
 
