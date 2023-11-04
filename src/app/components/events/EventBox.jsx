@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import {RiMapPin2Fill} from 'react-icons/ri'
 
 function EventBox({events}) {
   console.log(events)
@@ -29,10 +30,12 @@ function EventBox({events}) {
                           <div className="text-[20px] font-extrabold">{event.date.month}</div>
                         </div>
                         {/* location  */}
-                        <div>
-                          <div>{`${event.location.city}, ${event.location.country} `}</div>
-                          <div>
-                            <div>location.icon</div>
+                        <div className='bg-red-500/20 w-64 flex flex-col gap-y'>
+                          <div className='text-lg leading-none font-bold'>{`${event.location.city}, ${event.location.country} `}</div>
+                          <div className='flex items-center gap-x-1'>
+                            <div>
+                              <RiMapPin2Fill />
+                            </div>
                             <div>{event.location.address}</div>
                           </div>
                         </div>
