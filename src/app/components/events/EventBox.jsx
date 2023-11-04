@@ -7,10 +7,14 @@ function EventBox({events}) {
         <div className="bg-secondary/60 rounded-[10px] p-4 xl:p-12 relative">
           <div className="flex flex-col xl:flex-row justify-between h-[620px] xl:full gap-4">
             {/* image */}
-            <div className="hidden xl-flex w-[400px]">
+            <div className="hidden xl:flex w-[400px]">
             <Image
-              src={'/public/assets/albums/cover/band_standing.jpg'}
-              
+              src={'/assets/albums/cover/band_standing.jpg'}
+              width={358}
+              height={489}
+              priority
+              quality={100}
+              alt=''
             />
             </div>
               {/* event list */}
