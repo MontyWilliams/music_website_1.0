@@ -22,11 +22,11 @@ function EventBox({events}) {
                 {events.map((event) => {
                   return (
                     <div key={event.id} className="flex flex-col xl:flex-row items-center justify-between gap-y-4 xl:gap-y-0 xl:text-left my-4 xl:my-0 border-b border-white/10 pb-10 xl:py-3 last-of-type:border-none first-of-type:pt-0">
-                      <div>
+                      <div className="flex flex-col xl:flex-row">
                         {/* day and month */}
-                        <div className="flex flex-col justify-center items-center leading-tight w-[80px] mb-4 xl:mb-0">
-                          <div>{event.date.day}</div>
-                          <div>{event.date.month}</div>
+                        <div className="flex flex-col justify-center items-center leading-tight w-[80px] mb-4 xl:mb-0 ">
+                          <div className="text-[44px] font-black text-accent">{event.date.day}</div>
+                          <div className="text-[20px] font-extrabold">{event.date.month}</div>
                         </div>
                         {/* location  */}
                         <div>
