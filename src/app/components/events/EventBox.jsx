@@ -18,7 +18,7 @@ function EventBox({events}) {
             />
             </div>
               {/* event list */}
-              <div className="flex-1 bg-purple-400/10 h-[500px] flex flex-col justify-between overflow-y-scroll scrollbar-thumb-accent scrollbar-track-white/10 xl:pr-6">
+              <div className="flex-1 bg-purple-400/10 h-[500px] flex flex-col justify-between overflow-y-scroll scrollbar-thin scrollbar-thumb-accent scrollbar-track-white/10 xl:pr-6">
                 {events.map((event) => {
                   return (
                     <div key={event.id}>
