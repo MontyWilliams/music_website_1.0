@@ -12,7 +12,7 @@ const Events = async () => {
     <div>
       <section className="section" id="tours">
         <div className="container mx-auto">
-        <SectionHeader />
+        <SectionHeader pretitle='World Tour' title='Upcoming Events'/>
           {/* EventBox */}
           <EventBox events={events}/>
         </div>
