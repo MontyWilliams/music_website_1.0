@@ -1,5 +1,7 @@
+"user client";
 import Image from 'next/image'
 import {RiMapPin2Fill} from 'react-icons/ri'
+import { motion } from 'framer-motion'
 
 function EventBox({events}) {
   console.log(events)
