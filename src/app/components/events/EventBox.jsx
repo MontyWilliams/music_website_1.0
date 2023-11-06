@@ -7,13 +7,12 @@ import { fadeIn } from '../../../../variants'
 function EventBox({events}) {
   console.log(events)
   return (
-        <motion.div 
-        variants={fadeIn('up', 0.4)}
-        initial='hidden'
-        whileInView={'show'}
-        viewport={{ once: false, amount: 0.3}}
-        
-        className="bg-secondary/60 rounded-[10px] p-4 xl:p-12 relative">
+    <motion.div 
+    variants={fadeIn('up', 0.4)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{ once: false, amount: 0.3}}>
+        <div className="bg-secondary/60 rounded-[10px] p-4 xl:p-12 relative">
           <div className="flex flex-col xl:flex-row justify-between h-[620px] xl:full gap-4">
             {/* image */}
             <div className="hidden xl:flex w-[400px]">
@@ -58,7 +57,8 @@ function EventBox({events}) {
                 })}
               </div>
           </div>
-        </motion.div>
+        </div>
+    </motion.div>
   )
 }
 export default EventBox
