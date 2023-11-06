@@ -22,7 +22,7 @@ function EventBox({events}) {
               <div className="flex-1 bg-purple-400/10 h-[500px] flex flex-col justify-between overflow-y-scroll scrollbar-thin scrollbar-thumb-accent scrollbar-track-white/10 xl:pr-6">
                 {events.map((event) => {
                   return (
-                    <div key={event.id} className="flex flex-col xl:flex-row items-center justify-between gap-y-4 xl:gap-y-0 xl:text-left my-4 xl:my-0 border-b border-white/10 pb-10 xl:py-3 last-of-type:border-none first-of-type:pt-0">
+                    <div key={event.id} className="flex flex-col xl:flex-row items-center justify-between  gap-y-4 xl:gap-y-0 text-center xl:text-left my-4 xl:my-0 border-b border-white/10 pb-10 xl:py-3 last-of-type:border-none first-of-type:pt-0 p-4">
                       <div className="flex flex-col xl:flex-row items-center gap-x-4">
                         {/* day and month */}
                         <div className="flex flex-col justify-center items-center leading-tight w-[80px] mb-4 xl:mb-0 ">
@@ -39,12 +39,12 @@ function EventBox({events}) {
                             <div className='font-light'>{event.location.address}</div>
                           </div>
                         </div>
+                      </div>
                         {/* price range */}
-                        <div className="width-[100px] text-[17px] text-center text-accent font-bold ">{event.priceRange}
+                        <div className="w-[100px] text-[17px] text-center text-accent font-bold ">{event.priceRange}
                         </div>
                         {/* btn */}
-                        <button>Get Tickets</button>
-                      </div>
+                        <button className='btn btn-sm btn-accent'>Get Tickets</button>
                     </div>
                   )
                 })}
