@@ -2,8 +2,8 @@ const SectionHeader = ({ pretitle, title }) => {
   return (
     <header>
         {/* Header helps with seo */}
-      <h3>{pretitle}</h3>
-      <h2>{title}</h2>
+      <h3 className="pretitle text-center">{pretitle}</h3>
+      <h2 className="h2 text-center mb-8">{title}</h2>
     </header>
   )
 }
