@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import { MouseParallaxContainer, mouseParallaxChild } from 'react-parallax-mouse';
+import { MouseParallaxContainer, MouseParallaxChild } from 'react-parallax-mouse';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../variants';
@@ -30,14 +30,16 @@ const Hero = () => {
             resetOnLeave
             className='relative flex items-center h-[120px] xl:h-max xl:w-[840px]'
             >
-            <mouseParallaxChild>
-              <Image
-                src={'/assets/albums/conver/tjb_ground.jpg'}
-                fill
-                alt=''
-                className='object-contain'
-              />
-            </mouseParallaxChild>
+            <MouseParallaxChild className='relative'>
+              <div className='w-[300px] h-[101.37px] xl:w-[725px] xl:h-[244.97px]'>
+                <Image
+                  src={'/assets/hero/notes_quarter.svg'}
+                  fill
+                  alt=''
+                  className='object-contain'
+                />
+              </div>
+            </MouseParallaxChild>
           </MouseParallaxContainer>
         </div>
         {/* image */}
