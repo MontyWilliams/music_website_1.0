@@ -30,7 +30,14 @@ const Hero = () => {
             resetOnLeave
             className='relative flex items-center h-[120px] xl:h-max xl:w-[840px]'
             >
-            
+            <mouseParallaxChild>
+              <Image
+                src={'/assets/albums/conver/tjb_ground.jpg'}
+                fill
+                alt=''
+                className='object-contain'
+              />
+            </mouseParallaxChild>
           </MouseParallaxContainer>
         </div>
         {/* image */}
