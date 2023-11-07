@@ -24,8 +24,13 @@ const Hero = () => {
       <div className='container mx-auto bg-yellow-200/10 h-full flex justify-center items-center xl:justify-start'>
          {/* text */}
         <div className='bg-red-500/10 h-full flex flex-col justify-center items-center xl:items-start z-20 pt-12'>
-          <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.2}>
-
+          <MouseParallaxContainer
+            globalFactorX={0.1}
+            globalFactorY={0.2}
+            resetOnLeave
+            className='relative flex items-center h-[120px] xl:h-max xl:w-[840px]'
+            >
+            
           </MouseParallaxContainer>
         </div>
         {/* image */}
