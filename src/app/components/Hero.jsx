@@ -20,12 +20,25 @@ const locationSequence = [
 
 const Hero = () => {
   return (
-    <section className='h-[80vh] bg-pink-200/10 xl:h-[850px]'>
-      <div className='container mx-auto'>
+    <section className='h-[80vh] bg-pink-200/10 xl:h-[850px]' id='home'>
+      <div className='container mx-auto bg-yellow-200/10 h-full flex justify-center items-center xl:justify-start'>
          {/* text */}
-        <div>text</div>
+        <div className='bg-red-500/10 h-full flex flex-col justify-center items-center xl:items-start z-20 pt-12'>
+          <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.2}>
+
+          </MouseParallaxContainer>
+        </div>
         {/* image */}
-        <div>text</div>
+        <div className='hidden xl:flex absolute right-0 top-0 before:w-[784px] befor:h-[893px] before:absolute before:right-0 before:top-0 before:bg-singerOverlay before:z-10'>
+          <Image
+          src={'/assets/albums/cover/band_standing.jpg'}
+          width={617}
+          height={893}
+          alt=''
+          quality={100}
+          priority
+          />
+        </div>
       </div>      
     </section>
   )
