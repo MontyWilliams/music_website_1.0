@@ -91,6 +91,16 @@ const Hero = () => {
               </motion.div>
             </MouseParallaxChild>
           </MouseParallaxContainer>
+          {/* Tour and location */}
+          <div>
+            <TypeAnimation sequence={locationSequence}
+            wrapper='div'
+            speed={10}
+            deletionSpeed={10}
+            repeat={Infinity}
+            cursor={false}
+            />
+          </div>
         </div>
         {/* image */}
         <motion.div 
