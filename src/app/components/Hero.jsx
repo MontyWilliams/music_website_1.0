@@ -5,6 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../variants';
 
+// 
 const locationSequence = [
   'Los Angeles, USA',
   3000,
@@ -93,6 +94,9 @@ const Hero = () => {
           </MouseParallaxContainer>
           {/* Tour and location */}
           <div>
+            <div className='hidden xl:flex items-center justify-center relative w-7 h-7 mx-4'>
+              <Image fill src={'/assets/hero/mic.svg'} alt=''/>
+            </div>
             <TypeAnimation sequence={locationSequence}
             wrapper='div'
             speed={10}
