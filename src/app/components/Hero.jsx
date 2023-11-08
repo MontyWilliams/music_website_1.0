@@ -30,7 +30,11 @@ const Hero = () => {
             resetOnLeave
             className='relative flex items-center h-[120px] xl:h-max xl:w-[840px]'
             >
-            <MouseParallaxChild factorX={0.2} factorY={0.4} className='relative'>
+            <MouseParallaxChild
+              factorX={0.2} 
+              factorY={0.4} 
+              className='relative'
+              >
               <motion.div
                 variants={fadeIn('up', 0.4)}
                 initial='hidden'
@@ -40,6 +44,46 @@ const Hero = () => {
                 >
                 <Image
                   src={'/assets/hero/notes_quarter.svg'}
+                  fill
+                  alt=''
+                  className='object-contain'
+                />
+              </motion.div>
+            </MouseParallaxChild>
+            <MouseParallaxChild
+              factorX={0.9} 
+              factorY={0.9} 
+              className='absolute xl:left-6 xl-30'
+              >
+              <motion.div
+                variants={fadeIn('up', 0.7)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once: false, amount: 0.3}}
+                className='w-[300px] h-[101.37px] xl:w-[625px] xl:h-[244.97px]'
+                >
+                <Image
+                  src={'/assets/hero/text_thebadjokes.svg'}
+                  fill
+                  alt=''
+                  className='object-contain'
+                />
+              </motion.div>
+            </MouseParallaxChild>
+            <MouseParallaxChild
+              factorX={0.3} 
+              factorY={0.6} 
+              className='hidden xl:flex absolute right-0 z-[-20] opacity-80'
+              >
+              <motion.div
+                variants={fadeIn('up', 1.4)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once: false, amount: 0.3}}
+                className='w-[150px] h-[100px] xl:w-[258px] xl:h-[200px]'
+                >
+                <Image
+                  src={'/assets/hero/laghmask.svg'}
                   fill
                   alt=''
                   className='object-contain'
