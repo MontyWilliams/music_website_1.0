@@ -73,14 +73,14 @@ const Hero = () => {
             <MouseParallaxChild
               factorX={0.3} 
               factorY={0.6} 
-              className='hidden xl:flex absolute right-0 z-[-20] opacity-80'
+              className=' flex absolute right-0 z-[-20] opacity-80'
               >
               <motion.div
                 variants={fadeIn('up', 1.4)}
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{once: false, amount: 0.3}}
-                className='w-[150px] h-[100px] xl:w-[258px] xl:h-[200px]'
+                className='w-[150px] h-[100px] xl:w-[358px] xl:h-[300px] mix-blend-luminosity'
                 >
                 <Image
                   src={'/assets/hero/laghmask.svg'}
@@ -93,7 +93,12 @@ const Hero = () => {
           </MouseParallaxContainer>
         </div>
         {/* image */}
-        <div className='hidden xl:flex absolute right-0 top-0 before:w-[784px] befor:h-[893px] before:absolute before:right-0 before:top-0 before:bg-singerOverlay before:z-10'>
+        <motion.div 
+          variants={fadeIn('left', 0.2)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.7}}
+          className='hidden xl:flex absolute right-0 top-0 before:w-[784px] befor:h-[893px] before:absolute before:right-0 before:top-0 before:bg-singerOverlay before:z-10'>
           <Image
           src={'/assets/albums/cover/band_standing.jpg'}
           width={617}
@@ -102,7 +107,7 @@ const Hero = () => {
           quality={100}
           priority
           />
-        </div>
+        </motion.div>
       </div>      
     </section>
   )
