@@ -123,6 +123,14 @@ const Hero = () => {
               cursor={false}
             />
           </motion.div>
+          <motion.div
+            variants={fadeIn('up', 1.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.7}}
+            >
+            <button className='btn btn-lg btn-accent'>Get tickets</button>
+          </motion.div>
         </div>
         {/* image */}
         <motion.div 
