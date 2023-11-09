@@ -28,7 +28,7 @@ body {
 }
 
 .btn-lg {
-  @apply w-[160px] h-[540x];
+  @apply w-[160px] h-[54px];
 }
 
 .btn-accent {
