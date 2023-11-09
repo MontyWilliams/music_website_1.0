@@ -93,18 +93,36 @@ const Hero = () => {
             </MouseParallaxChild>
           </MouseParallaxContainer>
           {/* Tour and location */}
-          <div>
+          <motion.div
+            variants={fadeIn('up', 1)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.7}}
+            className='min-h-[60px] flex items-center mb-6 text-[26px]'>
+            <div className='hidden xl:flex items-center xl:gap-x-0'>
+              <div>World</div>
+              <div className='relative w-2 h-2 mx-2 flex items-center justify-center'>
+                <Image fill src={'/assets/hero/white_dot.svg'} />
+              </div>
+              <div>Tour</div>
+              <div className='relative w-2 h-2 mx-2 flex items-center justify-center'>
+                <Image fill src={'/assets/hero/white_dot.svg'} />
+              </div>
+              <div>2023</div>
+            </div>
+            {/* icon */}
             <div className='hidden xl:flex items-center justify-center relative w-7 h-7 mx-4'>
               <Image fill src={'/assets/hero/mic.svg'} alt=''/>
             </div>
+            {/* animation */}
             <TypeAnimation sequence={locationSequence}
-            wrapper='div'
-            speed={10}
-            deletionSpeed={10}
-            repeat={Infinity}
-            cursor={false}
+              wrapper='div'
+              speed={10}
+              deletionSpeed={10}
+              repeat={Infinity}
+              cursor={false}
             />
-          </div>
+          </motion.div>
         </div>
         {/* image */}
         <motion.div 
