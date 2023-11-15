@@ -1,4 +1,4 @@
-import { Alex_Brush, Montserrat} from 'next/font/google'
+import { Alex_Brush, Fredericka_the_Great, Montserrat, Silkscreen} from 'next/font/google'
 import './globals.css'
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -15,6 +15,12 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 })
 
+const silkScreen = Silkscreen({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-silkScreen',
+})
+
 export const metadata = {
   title: 'The Bad Jokes Band',
   description: 'Why you laghin?',
@@ -24,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* This makes it easier to turn fonts into classNames */}
-      <body className={`${alexBrush.variable} ${montserrat.variable} overflow-x-hidden relative`}>
+      <body className={`${alexBrush.variable} ${montserrat.variable} ${silkScreen.variable} overflow-x-hidden relative`}>
       <Header />
       {children}
       <Footer />
