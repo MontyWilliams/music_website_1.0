@@ -25,8 +25,9 @@ module.exports = {
         newsletter: 'url(/public/assets/gradient_clearbluis.png)'
       },
       fontFamily: {
-        alexBrush: [`var(--font-alexBrush)`, 'sans-serif'],
-        monteserrat: [`var(--font-monteserrat)`, 'sans-serif'],
+        silkScreen: ['var(--font-silkScreen)'],
+        alexBrush: [`var(--font-alexBrush)`],
+        montserrat: [`var(--font-montserrat)`],
       },
       colors: {
         primary: '#06062a',
