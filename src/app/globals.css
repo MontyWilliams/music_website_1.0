@@ -4,7 +4,7 @@
 
 
 body {
-  @apply bg-primary font-monteserrat text-white;
+  @apply bg-primary font-montserrat text-white;
 }
 
 .pretitle {
