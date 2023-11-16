@@ -10,17 +10,23 @@ const Player = () => {
     <div>
       <div className="container mx-auto  ">
         {/* text and avatar img */}
-        text and avatar img
+        <div>text and avatar img</div>
         {/* player */}
-        <AudioPlayer
-          loop
-          preload='none'
-          
-          volume={48}
-          volumePlacement='top'
-          src='/assets/player/youngsmoke3.mp3'
-        />
-
+        <div>
+          <AudioPlayer
+            loop
+            preload='none'
+            color="#fff"
+            volume={48}
+            volumePlacement='top'
+            src='/assets/player/youngsmoke3.mp3'
+            style={{
+              background: 'transparent',
+              boxShadow: 'none',
+              maxwidth: '100% !important',
+              }}
+          />
+        </div>
       </div>
     </div>
   )
