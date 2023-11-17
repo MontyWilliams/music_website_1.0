@@ -28,6 +28,7 @@ module.exports = {
         silkScreen: ['var(--font-silkScreen)'],
         alexBrush: [`var(--font-alexBrush)`],
         montserrat: [`var(--font-montserrat)`],
+        monoton: [`var(--font-monoton)`]
       },
       colors: {
         primary: '#06062a',

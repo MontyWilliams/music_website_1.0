@@ -1,4 +1,4 @@
-import { Alex_Brush, Fredericka_the_Great, Montserrat, Silkscreen} from 'next/font/google'
+import { Alex_Brush, Fredericka_the_Great, Monoton, Montserrat, Silkscreen} from 'next/font/google'
 import './globals.css'
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -9,6 +9,12 @@ const alexBrush = Alex_Brush({
   variable: '--font-alexBrush',
 });
 
+const monoton = Monoton({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-monoton',
+})
+
 const montserrat = Montserrat({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
@@ -16,7 +22,7 @@ const montserrat = Montserrat({
 })
 
 const silkScreen = Silkscreen({
-  weight: ['400'],
+  weight: ['400', '700'],
   subsets: ['latin'],
   variable: '--font-silkScreen',
 })
