@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { AudioPlayer } from 'react-audio-play';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../variants';
+import '../globals.css'
 
 const Player = () => {
   return (
@@ -23,7 +24,7 @@ const Player = () => {
             style={{
               background: 'transparent',
               boxShadow: 'none',
-              maxwidth: '100% !important',
+              maxWidth: '100% !important',
               }}
           />
         </div>
