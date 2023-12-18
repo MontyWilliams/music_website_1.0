@@ -10,7 +10,12 @@ import { fadeIn } from '../../../variants'
 const Header = () => {
   return (
     <header className="fixed z-50 w-full">
-      Header
+      <div className="containe mx-auto">
+        {/* logo */}
+        <Link href={'#'} className='relative flex w-[226px] h-[37.64px] transition-all mb-4 xl:mb-0'>
+          <Image src={'/assets/header/BJB_title_white (1).png'} fill/>
+        </Link>
+      </div>
     </header>
   )
 }
