@@ -15,6 +15,11 @@ const Player = () => {
           <div className="relative w-16 h-16">
             <Image src={'/assets/player/BadJokes Logo.png'} fill alt='' priority />
           </div>
+          {/* text */}
+          <div className='leading-none'>
+            <div className='text-lg font-medium'>The Bad Jokes Band</div>
+            <div className='text-sm font-light'>Latest Lp</div>
+          </div>
         </div>
         {/* player */}
         <div className='w-full max-w-4xl'>
