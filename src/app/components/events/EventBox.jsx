@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../../../variants'
 
 function EventBox({events}) {
-  console.log(events)
   return (
     <motion.div 
     variants={fadeIn('up', 0.4)}

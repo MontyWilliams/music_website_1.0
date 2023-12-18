@@ -6,7 +6,7 @@ export default function Home() {
   
   return (
     <main>
-      < Hero />
+      <Hero />
       <Player />
       <Events />
       <div className="h-[4000px]"></div>

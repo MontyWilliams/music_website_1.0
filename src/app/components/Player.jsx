@@ -8,12 +8,16 @@ import '../globals.css'
 
 const Player = () => {
   return (
-    <div>
-      <div className="container mx-auto  ">
+    <div className='bg-gradient-to-r from-tertiary/70 to-primary/10 backdrop-blur-[15px] h-[112px] flex items-center relative z-40'>
+      <div className="container mx-auto flex flex-col justify-between items-center xl:flex-row ">
         {/* text and avatar img */}
-        <div>text and avatar img</div>
+        <div className='hidden w-[300px] xl:flex items-center gap-x-4'>
+          <div className="relative w-16 h-16">
+            <Image src={'/assets/player/BadJokes Logo.png'} fill alt='' priority />
+          </div>
+        </div>
         {/* player */}
-        <div>
+        <div className='w-full max-w-4xl'>
           <AudioPlayer
             loop
             preload='none'
@@ -24,7 +28,7 @@ const Player = () => {
             style={{
               background: 'transparent',
               boxShadow: 'none',
-              maxWidth: '100% !important',
+              maxWidth: '100%',
               }}
           />
         </div>
