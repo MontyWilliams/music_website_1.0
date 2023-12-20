@@ -8,6 +8,7 @@ import {motion} from 'framer-motion'
 import { fadeIn } from '../../../variants'
 
 const Header = () => {
+  
   return (
     <header className="fixed z-50 w-full">
       <div className="containe mx-auto">
