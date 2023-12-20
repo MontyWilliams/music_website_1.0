@@ -8,7 +8,18 @@ import {motion} from 'framer-motion'
 import { fadeIn } from '../../../variants'
 
 const Header = () => {
-  
+  const [active, setActive ] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setActive(window.scrollY > 100); // detect scrolling
+    }
+    window.addEventListener('scroll', handleScroll); // add event listener
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+}, [])
   return (
     <header className="fixed z-50 w-full">
       <div className="containe mx-auto">
