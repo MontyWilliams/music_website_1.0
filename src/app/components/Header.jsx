@@ -21,7 +21,9 @@ const Header = () => {
     }
 }, [])
   return (
-    <header className="fixed z-50 w-full">
+    <header className={`fixed z-50 w-full ${
+      active ? 'bg-#030315 py-6 ' : 'bg-transparent py-8'
+    }`}>
       <div className="containe mx-auto">
         {/* logo */}
         <Link href={'#'} className='relative flex w-[226px] h-[37.64px] transition-all mb-4 xl:mb-0'>
