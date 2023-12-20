@@ -22,7 +22,7 @@ const Header = () => {
 }, [])
   return (
     <header className={`fixed z-50 w-full ${
-      active ? 'bg-#030315 py-6 ' : 'bg-transparent py-8'
+      active ? 'bg-[#030315] py-6 ' : 'bg-transparent py-8'
     }`}>
       <div className="containe mx-auto">
         {/* logo */}
