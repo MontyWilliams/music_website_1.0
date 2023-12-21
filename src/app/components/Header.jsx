@@ -3,7 +3,9 @@
 import {useEffect, useState} from 'react'
 import Image from 'next/image';
 import Link from 'next/link'
+
 import NavMobile from './NavMobile';
+import Nav from './Nav';
 
 import {motion} from 'framer-motion'
 import { fadeIn } from '../../../variants'
@@ -35,7 +37,7 @@ const Header = () => {
             />
         </Link>
         {/* nav */}
-        <nav>nav</nav>
+        <Nav />
         {/* nav mobile */}
         <NavMobile />
         {/* menu btn */}
