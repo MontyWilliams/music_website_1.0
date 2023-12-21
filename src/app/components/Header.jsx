@@ -37,12 +37,11 @@ const Header = () => {
             className='object-contain'
             />
         </Link>
-        {/* nav */}
         <Nav containerStyles='hidden xl:flex items-center gap-x-8' />
-        {/* nav mobile */}
         <NavMobile />
-        {/* menu btn */}
-        <MenuBtn /> 
+        <div className="absolute right-7  top-9 z-10 xl:hidden">
+          <MenuBtn /> 
+        </div>
         {/* socials */}
         <div>social icons</div>
       </div>
