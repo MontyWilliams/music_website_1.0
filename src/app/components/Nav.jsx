@@ -21,9 +21,9 @@ const links = [
 
 const Nav = ({containerStyles, linkStyles}) => {
   return (
-    <nav>
+    <nav className={`${containerStyles}`}>
       {links.map((link, index) => {
-        return <Link to={link.path}>{link.name}</Link>
+        return <Link to={link.path} className={`${linkStyles}`}>{link.name}</Link>
       })}
     </nav>
   )
