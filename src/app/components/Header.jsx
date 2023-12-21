@@ -37,7 +37,7 @@ const Header = () => {
             />
         </Link>
         {/* nav */}
-        <Nav containerStyles='hidden xl:flex items-center' />
+        <Nav containerStyles='hidden xl:flex items-center gap-x-8' />
         {/* nav mobile */}
         <NavMobile />
         {/* menu btn */}
