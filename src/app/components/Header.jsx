@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import NavMobile from './NavMobile';
 import Nav from './Nav';
+import MenuBtn from './MenuBtn';
 
 import {motion} from 'framer-motion'
 import { fadeIn } from '../../../variants'
@@ -24,7 +25,7 @@ const Header = () => {
     }
 }, [])
   return (
-    <header className={`fixed z-50 w-full ${
+    <header className={`fixed z-50 w-full transition-all ${     // transsition-all may slow down performance
       active ? 'bg-[#030315] py-6 ' : 'bg-transparent py-8'
     }`}>
       <div className="containe mx-auto flex flex-col xl:flex-row items-center justify-between">
@@ -41,7 +42,7 @@ const Header = () => {
         {/* nav mobile */}
         <NavMobile />
         {/* menu btn */}
-        <div>menu btn</div>
+        <MenuBtn /> 
         {/* socials */}
         <div>social icons</div>
       </div>
