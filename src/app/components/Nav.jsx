@@ -23,7 +23,17 @@ const Nav = ({containerStyles, linkStyles}) => {
   return (
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => {
-        return <Link to={link.path} className={`${linkStyles}`}>{link.name}</Link>
+        return <Link
+          to={link.path}
+          className={`${linkStyles} cursor-pointer border-b-2 border-transparent`}
+          key={index}
+          smooth
+          spy
+          offset={-50}
+          activeClass='active'
+          >
+            {link.name}
+        </Link>
       })}
     </nav>
   )
