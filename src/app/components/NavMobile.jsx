@@ -2,9 +2,7 @@ import React from 'react'
 
 const NavMobile = () => {
   return (
-    <div>
-      
-    </div>
+    <nav className='xl:hidden'>Nav Mobile</nav>
   )
 }
 
