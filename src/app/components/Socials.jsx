@@ -15,9 +15,12 @@ const socials= [
     icon: <RiSpotifyFill />
   },
 ]
-const Socials = () => {
+const Socials = ({containerStyles, iconStyles}) => {
   return (
-    <div>
+    <div className={`${containerStyles}`}>
+      {socials.map((item, index) => {
+        return <Link href={item.path}>{item.icon}</Link>
+      })}
       
     </div>
   )
