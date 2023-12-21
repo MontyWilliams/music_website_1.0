@@ -24,11 +24,23 @@ const Header = () => {
     <header className={`fixed z-50 w-full ${
       active ? 'bg-[#030315] py-6 ' : 'bg-transparent py-8'
     }`}>
-      <div className="containe mx-auto">
+      <div className="containe mx-auto flex flex-col xl:flex-row">
         {/* logo */}
         <Link href={'#'} className='relative flex w-[226px] h-[37.64px] transition-all mb-4 xl:mb-0'>
-          <Image src={'/assets/header/BJB_title_white (1).png'} fill/>
+          <Image
+            src={'/assets/header/BJB_title_white (1).png'}
+            fill
+            className='object-contain'
+            />
         </Link>
+        {/* nav */}
+        <nav>nav</nav>
+        {/* nav mobile */}
+        <nav>nav mobile</nav>
+        {/* menu btn */}
+        <div>menu btn</div>
+        {/* socials */}
+        <div>social icons</div>
       </div>
     </header>
   )
