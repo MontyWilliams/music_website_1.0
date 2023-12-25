@@ -1,11 +1,12 @@
+'use client'
 import React, {createContext, useState } from 'react'
 
 export const NavContext = createContext();
 
-function NavContextProvider({children}) {
-  const [isOpen, setisOpen] = useState(false);
+const NavContextProvider = ({children}) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <NavContext.Provider value={'nav context'}>
+    <NavContext.Provider value={{ isOpen, setIsOpen}}>
       {children}
     </NavContext.Provider>
   )
