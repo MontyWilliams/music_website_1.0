@@ -26,7 +26,7 @@ const Header = () => {
     }
 }, [])
   return (
-    <header className={`fixed z-50 w-full transition-all ${     // transsition-all may slow down performance
+    <header className={`fixed z-50 w-full transition-all p-5 ${     // transsition-all may slow down performance
       active ? 'bg-[#030315] py-6 ' : 'bg-transparent py-8'
     }`}>
       <div className="containe mx-auto flex flex-col xl:flex-row items-center justify-between">
@@ -43,7 +43,7 @@ const Header = () => {
         <div className="absolute right-7  top-9 z-10 xl:hidden">
           <MenuBtn /> 
         </div>
-        <Socials containerStyles='flex text-[24px] gap-x-4' iconStyles='hover:text-accent'/>
+        <Socials containerStyles='flex text-[24px] gap-x-4' iconStyles='hover:text-accent transition-all'/>
       </div>
     </header>
   )

@@ -3,6 +3,9 @@ import './globals.css'
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+import NavContextProvider from '@/context/NavContext'
+// import NavContextProvider from '../context/NavContext.jsx'
+
 const alexBrush = Alex_Brush({
   weight: ['400'],
   subsets: ['latin'],
@@ -34,13 +37,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      {/* This makes it easier to turn fonts into classNames */}
-      <body className={`${alexBrush.variable} ${montserrat.variable} ${silkScreen.variable} overflow-x-hidden relative`}>
-      <Header />
-      {children}
-      <Footer />
-      </body>
-    </html>
+    <NavContextProvider>
+      <html lang="en">
+        {/* This makes it easier to turn fonts into classNames */}
+        <body className={`${alexBrush.variable} ${montserrat.variable} ${silkScreen.variable} overflow-x-hidden relative`}>
+        <Header />
+        {children}
+        <Footer />
+        </body>
+      </html>
+    </NavContextProvider>
+    
   )
 }

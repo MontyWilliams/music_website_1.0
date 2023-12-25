@@ -1,17 +1,21 @@
 import Link from 'next/link';
-import { RiYoutubeFill, RiInstagramFill, RiSpotifyFill } from 'react-icons/ri';
+import { RiYoutubeFill, RiInstagramFill, RiSpotifyFill, RiSoundcloudFill } from 'react-icons/ri';
 
 const socials= [
   {
-    path: '#',
+    path: 'https://www.youtube.com/',
     icon: <RiYoutubeFill />
   },
   {
-    path: '#',
+    path: 'https://www.instagram.com/thebad_jokes/',
     icon: <RiInstagramFill />
   },
   {
-    path: '#',
+    path: 'https://soundcloud.com/',
+    icon: <RiSoundcloudFill />
+  },
+  {
+    path: 'https://open.spotify.com/',
     icon: <RiSpotifyFill />
   },
 ]
