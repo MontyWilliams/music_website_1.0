@@ -2,7 +2,7 @@ import React, {createContext, useState } from 'react'
 
 export const NavContext = createContext();
 
-function NavContext({children}) {
+function NavContextProvider({children}) {
   const [isOpen, setisOpen] = useState(false);
   return (
     <NavContext.Provider value={'nav context'}>
@@ -11,4 +11,4 @@ function NavContext({children}) {
   )
 }
 
-export default NavContext
+export default NavContextProvider
