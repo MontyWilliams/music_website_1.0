@@ -2,11 +2,11 @@ import React, {createContext, useState } from 'react'
 
 export const NavContext = createContext();
 
-function NavContext() {
+function NavContext({children}) {
   return (
-    <div>
-      
-    </div>
+    <NavContext.Provider value={'nav context'}>
+      {children}
+    </NavContext.Provider>
   )
 }
 
