@@ -7,6 +7,7 @@ import Link from 'next/link'
 import NavMobile from './NavMobile';
 import Nav from './Nav';
 import MenuBtn from './MenuBtn';
+import Socials from './Socials';
 
 import {motion} from 'framer-motion'
 import { fadeIn } from '../../../variants'
@@ -42,8 +43,7 @@ const Header = () => {
         <div className="absolute right-7  top-9 z-10 xl:hidden">
           <MenuBtn /> 
         </div>
-        {/* socials */}
-        <div>social icons</div>
+        <Socials containerStyles='flex text-[24px] gap-x-4' iconStyles='hover:text-accent'/>
       </div>
     </header>
   )
