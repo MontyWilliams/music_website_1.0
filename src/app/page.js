@@ -1,7 +1,7 @@
 import Events from '@/components/events/Events';
 import Hero from '@/components/Hero';
 import Player from '@/components/Player';
-import Albulm from '@/app/components/albulms/Albulm';
+import Albums from '@/app/components/albulms/Albums';
 
 export default function Home() {
   
@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <Player />
       <Events />
-      <Albulm />
+      <Albums />
       <div className="h-[4000px]"></div>
     </main>
     
