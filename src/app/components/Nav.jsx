@@ -1,5 +1,6 @@
 import { Link } from "react-scroll"
-
+import React, { useContext }from 'react'
+import { NavContext } from '../../context/NavContext'
 const links = [
   {
     path: 'home',
@@ -20,6 +21,7 @@ const links = [
 ] 
 
 const Nav = ({containerStyles, linkStyles}) => {
+
   return (
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => {
@@ -31,6 +33,7 @@ const Nav = ({containerStyles, linkStyles}) => {
           spy
           offset={-50}
           activeClass='active'
+
           >
             {link.name}
         </Link>
