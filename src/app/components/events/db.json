@@ -1,0 +1,243 @@
+  {
+    "events": [
+      {
+        "id": 1,
+        "date": {
+          "day": "15",
+          "month": "Feb"
+        },
+        "location": {
+          "city": "Los Angeles",
+          "country": "USA",
+          "address": "LA Convention Center"
+        },
+        "priceRange": "60-250$"
+      },
+      {
+        "id": 2,
+        "date": {
+          "day": "17",
+          "month": "March"
+        },
+        "location": {
+          "city": "Tulsa",
+          "country": "USA",
+          "address": "BOK Center"
+        },
+        "priceRange": "20-350$"
+      },
+      {
+        "id": 3,
+        "date": {
+          "day": "25",
+          "month": "March"
+        },
+        "location": {
+          "city": "Oklahoma City",
+          "country": "USA",
+          "address": "Thundr Arena"
+        },
+        "priceRange": "60-300$"
+      },
+      {
+        "id": 4,
+        "date": {
+          "day": "10",
+          "month": "April"
+        },
+        "location": {
+          "city": "Los Angeles",
+          "country": "USA",
+          "address": "L.A. Convention Center"
+        },
+        "priceRange": "50-250$"
+      },
+      {
+        "id": 5,
+        "date": {
+          "day": "15",
+          "month": "June"
+        },
+        "location": {
+          "city": "London",
+          "country": "UK",
+          "address": "Royal Exhibition Hall"
+        },
+        "priceRange": "70-350£"
+      },
+      {
+        "id": 6,
+        "date": {
+          "day": "8",
+          "month": "August"
+        },
+        "location": {
+          "city": "Paris",
+          "country": "France",
+          "address": "Paris Expo Center"
+        },
+        "priceRange": "55-275€"
+      },
+      {
+        "id": 7,
+        "date": {
+          "day": "20",
+          "month": "October"
+        },
+        "location": {
+          "city": "Sydney",
+          "country": "Australia",
+          "address": "Sydney Convention Center"
+        },
+        "priceRange": "70-350AUD"
+      }
+      
+
+      
+    ],
+    "albums": [
+      {
+        "id": 1,
+        "img": "/public/assets/albums/cover/Badjokesbandslack.jpg",
+        "name": "album 1",
+        "tracks": [
+          {
+            "name": "name of track 1",
+            "src": "/public/assets/player/its yours.mp3"
+          },
+          {
+            "name": "name of track 2",
+            "src": "/public/assets/player/its yours.mp3"
+          },
+          {
+            "name": "name of track 3",
+            "src": "/public/assets/player/its yours.mp3"
+          },
+          {
+            "name": "name of track 4",
+            "src": "/public/assets/player/its yours.mp3"
+          },
+          {
+            "name": "name of track 5",
+            "src": "/public/assets/player/its yours.mp3"
+          },
+          {
+            "name": "name of track 6",
+            "src": "/public/assets/player/its yours.mp3"
+          },
+          {
+            "name": "name of track 7",
+            "src": "/public/assets/player/its yours.mp3"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "img": "/public/assets/albums/cover/band_full_wide.jpg",
+        "name": "album 2",
+        "tracks": [
+          {
+            "name": "name of track 1",
+            "src": "/public/assets/player/king comin.mp3"
+          },
+          {
+            "name": "name of track 2",
+            "src": "/public/assets/player/king comin.mp3"
+          },
+          {
+            "name": "name of track 3",
+            "src": "/public/assets/player/king comin.mp3"
+          },
+          {
+            "name": "name of track 4",
+            "src": "/public/assets/player/king comin.mp3"
+          },
+          {
+            "name": "name of track 5",
+            "src": "/public/assets/player/king comin.mp3"
+          },
+          {
+            "name": "name of track 6",
+            "src": "/public/assets/player/king comin.mp3"
+          },
+          {
+            "name": "name of track 7",
+            "src": "/public/assets/player/king comin.mp3"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "img": "/public/assets/albums/cover/band_standing.jpg",
+        "name": "album 3",
+        "tracks": [
+          {
+            "name": "name of track 1",
+            "src": "/public/assets/player/youngsmoke.mp3"
+          },
+          {
+            "name": "name of track 2",
+            "src": "/public/assets/player/youngsmoke.mp3"
+          },
+          {
+            "name": "name of track 3",
+            "src": "/public/assets/player/youngsmoke.mp3"
+          },
+          {
+            "name": "name of track 4",
+            "src": "/public/assets/player/youngsmoke.mp3"
+          },
+          {
+            "name": "name of track 5",
+            "src": "/public/assets/player/youngsmoke.mp3"
+          },
+          {
+            "name": "name of track 6",
+            "src": "/public/assets/player/youngsmoke.mp3"
+          },
+          {
+            "name": "name of track 7",
+            "src": "/public/assets/player/youngsmoke.mp3"
+          }
+        ]
+      }
+    ],
+    "posts": [
+      {
+        "id": 1,
+        "date": "2023-09-21",
+        "title": "Rock Concert at Central Park",
+        "description": "Join us for an electrifying night of F****'n Rockin! Have a great time and some drinks. Gauranteed fun!"
+      },
+      {
+        "id": 2,
+        "date": "2023-10-15",
+        "title": "Jazz Night at Downtown Lounge",
+        "description": "Experience the soulful melodies of jazz in a cozy ambiance. Don't miss this enchanting night of live music."
+      },
+      {
+        "id": 3,
+        "date": "2023-12-10",
+        "title": "Hard Rock Extravaganza at City Auditorium",
+        "description": "Prepare for an intense rock experience! A night filled with roaring guitars and thundering drums."
+      },
+      {
+        "id": 4,
+        "date": "2024-01-18",
+        "title": "Rock 'n' Roll Feast at Riverside Park",
+        "description": "Indulge in a rock-inspired culinary journey. Enjoy great food and live music in a unique fusion."
+      },
+      {
+        "id": 5,
+        "date": "2024-05-30",
+        "title": "Rock 'n' Zen Retreat",
+        "description": "Combine the power of rock and inner peace. A day of yoga, meditation, and rock-inspired mindfulness."
+      },
+      {
+        "id": 6,
+        "date": "2024-06-20",
+        "title": "Rock 'n' Gaming Con at Convention Center",
+        "description": "A gaming paradise with a rock 'n' roll twist! Explore the latest games, meet developers, and rock the tournaments."
+      }
+    ]
+   }

@@ -1,7 +1,7 @@
 import Events from '@/components/events/Events';
 import Hero from '@/components/Hero';
 import Player from '@/components/Player';
-import Albums from '@/app/components/albulms/Albums';
+import Albums from '@/app/components/albums/Albums';
 
 export default function Home() {
   

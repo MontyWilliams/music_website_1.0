@@ -14,7 +14,11 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
+const fetcher = (url) => fetch(url).then((res) => res.json())
+
 function AlbumSlider() {
+  // const {data, error} = useSWR('http://localhost:3000/albums', fetcher)
+  // console.log(data)
   return (
     <div>
       AlbumSlider      

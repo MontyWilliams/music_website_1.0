@@ -1,13 +1,14 @@
 import EventBox from "./EventBox";
 import SectionHeader from "../SectionHeader";
+import event from '../../../../_data/db.json'
 
-const getEvents = async () => {
-  const res = await fetch('http://localhost:4000/events');
-  return res.json();
+const getEvents = () => {
+  return event.events
 }
 
-const Events = async () => {
-  const events = await getEvents();
+const Events = () => {
+  const events = getEvents();
+  console.log(events)
   return (
     <div>
       <section className="section" id="tours">
