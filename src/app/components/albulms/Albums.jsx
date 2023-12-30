@@ -1,6 +1,6 @@
 'use client';
 
-import AlbulmSlider from "./AlbulmSlider";
+import AlbumSlider from "./AlbumSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../../variants"
 
@@ -11,6 +11,9 @@ const Albums = () => {
     <section id='discography'>
       <div className="container mx-auto">
         <SectionHeader pretitle='Discography' title='Popular Albums' />
+        <div>
+          <AlbumSlider />
+        </div>
       </div>
 
     </section>
