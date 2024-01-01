@@ -46,7 +46,13 @@ function AlbumSlider() {
                   />
                 </div>
                 {/* track container */}
-                <div>track container</div>
+                <div>
+                  <div>
+                    {e.tracks?.map((track, index) => {
+                      return <div key={index}>{track.name}</div>
+                    })}
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
           )
