@@ -14,14 +14,29 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-const fetcher = (url) => fetch(url).then((res) => res.json())
+import album from '../../../../_data/db.json'
+
+
+// const fetcher = (url) => fetch(url).then((res) => res.json())
 
 function AlbumSlider() {
   // const {data, error} = useSWR('http://localhost:3000/albums', fetcher)
   // console.log(data)
+  const albums = album.albums;
+
+  // if (error) return 'Failed to fetch data';
+  if (!albums) return 'Loading...';
+
   return (
     <div>
-      AlbumSlider      
+       {/* top slider  */}
+       <Swiper>
+        {albums.map((e) => {
+          console.log(e)
+        })}
+       </Swiper>
+       {/* thumb slider */}
+       <Swiper>Thumb slider</Swiper>
     </div>
   )
 }
