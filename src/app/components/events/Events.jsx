@@ -2,13 +2,13 @@ import EventBox from "./EventBox";
 import SectionHeader from "../SectionHeader";
 import event from '../../../../_data/db.json'
 
-const getEvents = () => {
-  return event.events
-}
+// const getEvents = () => {
+//   return event.events
+// }
 
 const Events = () => {
-  const events = getEvents();
-  console.log(events)
+  const events = event.events
+
   return (
     <div>
       <section className="section" id="tours">
