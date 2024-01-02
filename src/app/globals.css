@@ -100,3 +100,20 @@ body {
 .active {
   @apply border-b-2 border-accent;
 }
+
+/* album slider */
+.album-slider .rap-container .rap-volume .rap-volume-controls {
+  @apply !bg-accent;
+}
+
+.album-slider .rap-container .rap-slider {
+  @apply !bg-primary/40;
+}
+
+.album-slider .rap-container .rap-pp-button svg {
+  @apply w-[12px];
+}
+
+.album-slider .rap-container .rap-volume .rap-volume-btn svg {
+  @apply w-[20px];
+}
