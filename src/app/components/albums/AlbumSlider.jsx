@@ -143,7 +143,7 @@ function AlbumSlider() {
                fill
                priority
                alt='ddd'
-               className='object-contain'
+               className='object-contain group-hover:scale-105 transition-all duration-200'
              />
             </div>
           </SwiperSlide>
