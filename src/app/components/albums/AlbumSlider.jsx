@@ -20,6 +20,7 @@ import album from '../../../../_data/db.json'
 // const fetcher = (url) => fetch(url).then((res) => res.json())
 
 function AlbumSlider() {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null)
   // const {data, error} = useSWR('http://localhost:3000/albums', fetcher)
   // console.log(data)
   const albums = album.albums;
@@ -30,7 +31,21 @@ function AlbumSlider() {
   return (
     <div>
        {/* top slider  */}
-       <Swiper >
+       <Swiper
+        effect={'coverflow'}
+        speed={1000}
+        spaceBetween={80}
+        allowTouchMove={false}
+        thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper: null,}}
+        modules={[FreeMode, Navigation, Thumbs, EffectCoverflow]}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        className='album-slider'>
         {albums.map((e) => {
           return (
             <SwiperSlide key={e.id} className='mb-12'>
@@ -84,7 +99,24 @@ function AlbumSlider() {
         })}
        </Swiper>
        {/* thumb slider */}
-       <Swiper>Thumb slider</Swiper>
+       <Swiper onSwiper={setThumbsSwiper} modules={[FreeMode, Navigation, Thumbs]}>
+        {albums?.map((thumb, index) => {
+          return (
+            <SwiperSlide key={index}>
+            {/* img */}
+            <div className='relative w-[195px] h-[195px]'>
+             <Image
+               src={thumb.img}
+               fill
+               priority
+               alt='ddd'
+               className='object-contain'
+             />
+            </div>
+          </SwiperSlide>
+          );
+        })}
+       </Swiper>
     </div>
   )
 }
