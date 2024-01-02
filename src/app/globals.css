@@ -117,3 +117,12 @@ body {
 .album-slider .rap-container .rap-volume .rap-volume-btn svg {
   @apply w-[20px];
 }
+
+.album-slider .rap-container .rap-pp-button svg path,
+.album-slider .rap-container .rap-volume .rap-volume-btn svg path {
+  @apply fill-accent;
+}
+
+.album-slider .rap-container .rap-controls span {
+  @apply !text-sm;
+}
