@@ -99,7 +99,32 @@ function AlbumSlider() {
         })}
        </Swiper>
        {/* thumb slider */}
-       <Swiper onSwiper={setThumbsSwiper} modules={[FreeMode, Navigation, Thumbs]}>
+       <Swiper
+          onSwiper={setThumbsSwiper}
+          breakpoints={{
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            425: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            1310: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            },
+          }}
+          modules={[FreeMode, Navigation, Thumbs]}
+        >
         {albums?.map((thumb, index) => {
           return (
             <SwiperSlide key={index}>
