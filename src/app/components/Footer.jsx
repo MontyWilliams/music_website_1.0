@@ -12,6 +12,8 @@ const Footer = () => {
   return (
     <footer className='bg-accent section h-[500px] xl:h-auto'>
       <div className="container h-full mx-auto flex flex-col items-center gap-y-8">
+      <h1>For Booking information:</h1>
+
         {/* email link */}
         <motion.div
           variants={fadeIn('up', 0.2)}
@@ -20,7 +22,7 @@ const Footer = () => {
           viewport={{ once: false, amount: 0.3}}
         >
           <Link href='#'>
-            <h2 className='font-semibold leading-tight'>management@thebadjokesband.com</h2>
+            <h2 className='font-semibold leading-tight hover:text-lg duration-700 ease-in-out'>management@thebadjokesband.com</h2>
           </Link>
         </motion.div>
           {/* nav */}
