@@ -15,7 +15,7 @@ export default function Home() {
       <Albums />
       <Blog />
       <Newsletter />
-      <div className="h-[4000px]"></div>
+      {/* <div className="h-[4000px]"></div> */}
     </main>
     
   )
