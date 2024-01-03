@@ -11,14 +11,20 @@ function Newsletter() {
       id='contact'  
     >
       <div className="container mx-auto h-full">
-        <div>
+        <div className="flex flex-col h-full items-center justify-center">
           {/*  text */}
           <SectionHeader
             pretitle='Get in touch'
             title='Sign up to our newsletter'
           />
           {/* input */}
-          <div className="relative flex items-center w-full max-w-xl">
+          <motion.div
+            variants={fadeIn('up', 0.4)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3}}
+            className="relative flex items-center w-full max-w-xl"
+          >
             <input
               type="text"
               placeholder="Email address"    
@@ -30,7 +36,7 @@ function Newsletter() {
             >
               Subscribe
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
