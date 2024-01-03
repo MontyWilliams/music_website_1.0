@@ -19,8 +19,15 @@ function Newsletter() {
           />
           {/* input */}
           <div className="relative flex items-center w-full max-w-xl">
-            <input type="text" placeholder="Email address" className="w-full"/>
-            <button type='submit' className="bg-accent rounded-sm">
+            <input
+              type="text"
+              placeholder="Email address"    
+              className="w-full h-[59px] outline-none rounded-full bg-primary/60 backdrop-blur-[15px] px-8"
+            />
+            <button
+              type='submit'
+              className="bg-accent rounded-full absolute right-2 h-[46px] text-[15px] hover:bg-accent-hover transition-all px-6"
+            >
               Subscribe
             </button>
           </div>
