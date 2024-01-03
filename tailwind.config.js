@@ -22,7 +22,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         singerOverlay: 'url(/public/assets/gradient_clearbluis.png)',
-        newsletter: 'url(/public/assets/newspaer.jpg)'
+        newsletter: 'url(/assets/newspaper.jpg)'
       },
       fontFamily: {
         silkScreen: ['var(--font-silkScreen)'],
